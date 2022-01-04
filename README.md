@@ -25,6 +25,10 @@ $ mvn install:install-file -Dfile=<ORACLE_PATH>\ojdbc8.jar -DgroupId=com.oracle 
 
 The project makes use of Maven 3.5.0 or higher.
 
+## Create DB Schema
+
+Use <HOME>\SpringBootDemo\persistence\src\main\resources\1-create-tables-baseline.sql.vm to create the tables and user.
+
 ## Running the Application
 
 Running the application is as simple as using the command:
