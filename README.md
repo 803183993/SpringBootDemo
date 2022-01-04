@@ -11,7 +11,17 @@ The project also shows how a two-phase commit transaction manager, like Atomikos
 ## Requirements
 
 The project requires [Java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or
-higher.
+higher. And an SQL based DB - for running integration tests.
+
+## Add Oracle JDBC driver Manually
+
+Note
+
+Due to Oracle license restrictions, the Oracle JDBC driver is not available in the public Maven repository. To use the Oracle JDBC driver with Maven, you have to download and install it into your Maven local repository manually.
+
+```console
+$ mvn install:install-file -Dfile=<ORACLE_PATH>\ojdbc8.jar -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=19.3 -Dpackaging=jar
+```
 
 The project makes use of Maven 3.5.0 or higher.
 
